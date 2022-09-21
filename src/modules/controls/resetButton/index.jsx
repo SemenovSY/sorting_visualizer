@@ -2,8 +2,6 @@ import { useDispatch } from "react-redux";
 
 import { Button } from 'shared';
 
-import styles from './styles';
-
 const resetArray = () => ({ type: 'CONTROLS/RESET_ARRAY' });
 
 const ResetButton = () => {
@@ -14,7 +12,6 @@ const ResetButton = () => {
   return (
     <Button
       text="Пересоздать массив"
-      className={ styles.button }
       disabled={ false }
       onClick={ onClick }
     />

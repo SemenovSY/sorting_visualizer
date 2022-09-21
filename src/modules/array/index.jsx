@@ -7,10 +7,10 @@ import styles from './styles';
 
 const WIDTH_MULTIPLIER = window.screen.width;
 
-const ACTIVE_COLOR = '#FF6A59';
-const SORTED_COLOR = '#41A262';
-const AUXILIARY_COLOR = '#2C7EE7';
-const DEFAULT_COLOR = '#F1A217';
+const ACTIVE_COLOR = '#ff5555';
+const SORTED_COLOR = '#4ed26c';
+const AUXILIARY_COLOR = '#bd93f9';
+const DEFAULT_COLOR = '#ffb86c';
 
 const resetArray = () => ({ type: 'CONTROLS/RESET_ARRAY' });
 
