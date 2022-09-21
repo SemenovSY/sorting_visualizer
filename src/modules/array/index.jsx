@@ -8,7 +8,7 @@ import styles from './styles';
 const WIDTH_MULTIPLIER = window.screen.width;
 
 const ACTIVE_COLOR = '#ff5555';
-const SORTED_COLOR = '#50fa7b';
+const SORTED_COLOR = '#4ed26c';
 const AUXILIARY_COLOR = '#bd93f9';
 const DEFAULT_COLOR = '#ffb86c';
 
