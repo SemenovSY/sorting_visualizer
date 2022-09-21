@@ -1,4 +1,7 @@
-# single page application template
+# sorting visualizer application
+
+I hope you enjoy playing with this sorting algorithms visualization tool as much as I enjoyed creating it.<br />
+You can try this at https://semenovsy.github.io/sorting_visualizer/ :rocket:
 
 Based on [react](https://reactjs.org/), [redux](https://redux.js.org/),
 [redux-saga](https://redux-saga.js.org/), [stylus](https://stylus-lang.com/),
@@ -9,7 +12,7 @@ Based on [react](https://reactjs.org/), [redux](https://redux.js.org/),
 **Step 1.** Use this template:
 
 ```bash
-Your new repo will start with the same files and folders as this base-config.
+Your new repo will start with the same files and folders.
 ```
 
 **Step 2.** Clone:

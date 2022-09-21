@@ -1,3 +1,9 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers({});
+import arraySettings from './arraySettings'
+import comparison from './comparison'
+
+export default combineReducers({
+  arraySettings,
+  comparison
+});

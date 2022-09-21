@@ -1,12 +1,14 @@
 {
   "name": "base-config",
   "version": "1.0.0",
-  "description": "single page application template",
+  "homepage": "https://semenovsy.github.io/sorting_visualizer",
+  "description": "sorting visualizer application",
   "main": "index.js",
   "author": "Sergey Semenov",
   "license": "ISC",
   "dependencies": {
     "classnames": "2.3.1",
+    "gh-pages": "4.0.0",
     "prop-types": "15.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -45,6 +47,7 @@
   },
   "scripts": {
     "build": "BABEL_ENV=production webpack --node-env=prod",
-    "start": "BABEL_ENV=development webpack serve --node-env=dev"
+    "start": "BABEL_ENV=development webpack serve --node-env=dev",
+    "deploy": "gh-pages -d dist"
   }
 }

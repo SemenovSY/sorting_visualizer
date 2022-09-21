@@ -1,5 +1,13 @@
+import Array from './modules/array';
+import Controls from './modules/controls';
+
 const App = () => {
-  return <>Single Page Application Template</>;
+  return (
+    <>
+      <Array />
+      <Controls />
+    </>
+  );
 };
 
 export default App;

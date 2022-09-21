@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCss = require('mini-css-extract-plugin');
 const deadCodePlugin = require('webpack-deadcode-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -93,6 +94,11 @@ module.exports = {
       filename: 'index.html',
       template: path.resolve('templates', 'index.html'),
       minify: { ...htmlMinify }
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: path.resolve('files'), to: path.resolve('dist') }
+      ]
     }),
     new MiniCss({ filename: 'css/[name]_[contenthash].css', ignoreOrder: true }),
     new deadCodePlugin({

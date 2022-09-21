@@ -1,0 +1,17 @@
+@import '~constants'
+
+.button
+  height 4rem
+  padding 0 1.6rem
+  font-weight 600
+  background-color #fff
+  border .1rem solid $grey
+  border-radius 1.2rem
+  cursor pointer
+
+  &:hover:not(&--active)
+    background-color $light-grey
+
+  &:active
+    color #fff
+    background-color $green

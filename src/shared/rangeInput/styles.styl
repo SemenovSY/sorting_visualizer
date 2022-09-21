@@ -1,0 +1,58 @@
+@import '~constants'
+
+$thumb()
+  box-shadow .1rem .1rem .1rem $grey
+  border .1rem solid $grey
+  height 1.6rem
+  width 1.4rem
+  border-radius .5rem
+  background $green
+  cursor pointer
+  -webkit-appearance none
+
+$track()
+  width 100%
+  height 1rem
+
+.wrapper
+  width 24.8rem
+  display flex
+  flex-direction column
+
+.title
+  padding-left .4rem
+  margin-bottom .4rem
+  font-size 1.2rem
+  color #8c8c8c
+
+.range
+  margin 0
+  height 1.2rem
+  -webkit-appearance none
+  width 100%
+  border .1rem solid $grey
+  border-radius .5rem
+
+  &:focus
+    outline none
+
+  &::-webkit-slider-thumb
+    $thumb()
+
+  &::-moz-range-track
+    $track()
+
+  &::-moz-range-thumb
+    $thumb()
+
+  &::-ms-thumb
+    $thumb()
+
+  &::-ms-track
+    $track()
+
+.disabled
+  background-color #edeeee
+  border-color #edeeee
+  color #a7a8a9
+  cursor not-allowed
