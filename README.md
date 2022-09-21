@@ -18,13 +18,13 @@ Your new repo will start with the same files and folders.
 **Step 2.** Clone:
 
 ```bash
-git clone URL
+git clone https://github.com/SemenovSY/sorting_visualizer.git
 ```
 
 **Step 3.** Install with npm:
 
 ```bash
-npm i
+npm ci
 ```
 
 **Step 4.** Start development:
